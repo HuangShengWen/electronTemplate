@@ -1,5 +1,5 @@
 # electronTemplate
-electron模板
+electron + vue2 + vu3 
 # admin 
   管理端页面 -Vue2项目
   ### 启动命令
