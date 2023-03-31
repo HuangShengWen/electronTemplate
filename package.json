@@ -1,0 +1,49 @@
+{
+  "name": "electrondemo",
+  "version": "1.0.0",
+  "description": "ee",
+  "main": "./electron/main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^23.2.0",
+    "electron-builder": "^23.6.0"
+  },
+  "build":{
+    "productName":"测试包",
+    "appId": "com.aimooc.testpackage",
+    "copyright":"Copyright © 2023 <huangshengwen>",
+    "directories": { 
+      "output": "builder"	
+    },
+    "nsis":{
+      "oneClick":false,
+      "allowToChangeInstallationDirectory":true,
+      "createDesktopShortcut":true,
+      "installerIcon":"./electron/build/favicon.ico"
+    },
+
+    "win": {
+      "icon": "./electron/build/favicon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+          	"x64"
+          ]
+        }
+      ]
+  },
+  
+  "files": [
+    "uidist/**/*",
+    "admindist/**/*",
+    "electron/**/*"
+  ]
+},
+  "scripts": {
+    "dev:electron": "electron .",
+    "build:electron":"electron-builder"
+  },
+  "author": "huangshengwen",
+  "license": "ISC"
+}
