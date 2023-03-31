@@ -5,4 +5,10 @@ electron模板
 # ui
   主要界面 -vue3项目
 ##  注意
+需要进入 admin和ui界面下载依赖
+## 命令
+  ### electron打包 
+    npm run build:electron
+  ### electron运行
+    npm run dev:electron
 
